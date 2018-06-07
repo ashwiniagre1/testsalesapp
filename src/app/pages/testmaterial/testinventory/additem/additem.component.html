@@ -1,0 +1,27 @@
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-card [footer]="true" [header]="true" [show]="true" [header-align]="'left'" [footer-align]="'right'">
+            <amexio-header>
+                Add Item
+            </amexio-header>
+            <amexio-body>
+                <amexio-text-input [field-label]="'Item Id'" [(ngModel)]="additemModel.itemid" name="additemModel.itemid" [place-holder]="'Enter Item Id'" [allow-blank]="true" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true" (onBlur)="onBlur_itemid($event)"
+                    (input)="input_itemid($event)" (focus)="focus_itemid($event)">
+                </amexio-text-input>
+                <amexio-text-input [field-label]="'Item Name'" [(ngModel)]="additemModel.name" name="additemModel.name" [place-holder]="'Enter item name'" [allow-blank]="true" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true" (onBlur)="onBlur_name($event)"
+                    (input)="input_name($event)" (focus)="focus_name($event)">
+                </amexio-text-input>
+                <amexio-number-input [field-label]="'Price'" [(ngModel)]="additemModel.price" name="additemModel.price" [place-holder]="'Enter Price'" [allow-blank]="true" [font-size]="10" [has-label]="true" [min-value]="0" [max-value]="20" (onBlur)="onBlur_price($event)"
+                    (input)="input_price($event)" (focus)="focus_price($event)">
+                </amexio-number-input>
+
+            </amexio-body>
+
+            <amexio-action>
+                <amexio-button [label]="'Add'" [icon]="'fa fa-save fa 2x'" [type]="'theme-color'" [tooltip]="'button'" [size]="'default'" [form-bind]="'btn'" (onClick)="onClick_btn($event)">
+                </amexio-button>
+
+            </amexio-action>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>

@@ -1,5 +1,5 @@
 /**
- * Created by sagar on 12/2/18.
+ * Created by Sagar Jadhav.
  */
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
@@ -12,8 +12,13 @@ import {AmexioWidgetModule} from "amexio-ng-extensions";
 const routes: Routes = [
   { path: '', component:HomeComponent,
     children: [
-
-    ]
+          	{
+     	path: 'testinventory/additem', loadChildren: './../pages/testmaterial/testinventory/additem/additem.module#AdditemModule'
+     	},	
+	     	{
+     	path: 'testinventory/productdetails', loadChildren: './../pages/testmaterial/testinventory/productdetails/productdetails.module#ProductdetailsModule'
+     	},	
+	    ]
   }
 ];
 
