@@ -19,7 +19,13 @@ const routes: Routes = [
      	path: 'testinventory/productdetails', loadChildren: './../pages/testmaterial/testinventory/productdetails/productdetails.module#ProductdetailsModule'
      	},	
 	     	{
+     	path: 'testinventory/testui', loadChildren: './../pages/testmaterial/testinventory/testui/testui.module#TestuiModule'
+     	},	
+	     	{
      	path: 'regiondomain/test', loadChildren: './../pages/region/regiondomain/test/test.module#TestModule'
+     	},	
+	     	{
+     	path: 'regiondomain/vertiacalform', loadChildren: './../pages/region/regiondomain/vertiacalform/vertiacalform.module#VertiacalformModule'
      	},	
 	    ]
   }
