@@ -18,6 +18,9 @@ const routes: Routes = [
 	     	{
      	path: 'testinventory/productdetails', loadChildren: './../pages/testmaterial/testinventory/productdetails/productdetails.module#ProductdetailsModule'
      	},	
+	     	{
+     	path: 'regiondomain/test', loadChildren: './../pages/region/regiondomain/test/test.module#TestModule'
+     	},	
 	    ]
   }
 ];
