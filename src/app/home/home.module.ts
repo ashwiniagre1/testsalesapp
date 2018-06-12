@@ -22,6 +22,9 @@ const routes: Routes = [
      	path: 'testinventory/testui', loadChildren: './../pages/testmaterial/testinventory/testui/testui.module#TestuiModule'
      	},	
 	     	{
+     	path: 'testinventory/testlogintemp', loadChildren: './../pages/testmaterial/testinventory/testlogintemp/testlogintemp.module#TestlogintempModule'
+     	},	
+	     	{
      	path: 'regiondomain/test', loadChildren: './../pages/region/regiondomain/test/test.module#TestModule'
      	},	
 	     	{
